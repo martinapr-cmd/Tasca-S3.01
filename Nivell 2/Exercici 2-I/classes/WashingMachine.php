@@ -1,8 +1,10 @@
 <?php
 
 require_once 'IMachineActions.php';
+require_once 'Switchable.php';
+require_once 'Washable.php';
 
-class WashingMachine implements IMachineActions
+class WashingMachine implements Switchable, Washable
 {
     public function turnOn(): void
     {
@@ -12,18 +14,6 @@ class WashingMachine implements IMachineActions
     public function turnOff(): void
     {
         echo "Washing machine off\n";
-    }
-
-    public function heat(): void
-    {
-        // Not supported
-        throw new Exception("Heating not supported");
-    }
-
-    public function cool(): void
-    {
-        // Not supported
-        throw new Exception("Cooling not supported");
     }
 
     public function wash(): void
