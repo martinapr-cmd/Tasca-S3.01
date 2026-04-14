@@ -1,12 +1,16 @@
 <?php
 
-include('classes/Ghost.php');
+require_once "classes/Character.php";
+require_once "classes/Ghost.php";
+require_once "classes/Knight.php";
+require_once "classes/MoveMove.php";
+require_once "classes/AttackMove.php";
+require_once "classes/Combat.php";
 
-function doCombat(Character $character)
-{
-    $character->move();
-    $character->attack(); 
-}
+$knight = new Knight();
+$ghost = new Ghost();
 
-$enemy = new Ghost();
-doCombat($enemy); 
+$combat = new Combat();
+
+$combat->doCombat($knight);
+$ghost->move();
