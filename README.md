@@ -1,10 +1,10 @@
-# Tasca-S3.01
+# Tasca-S3.01 _ SOLID in PHP
 
-> *PHP and Patterns.*
+> *PHP and Object-Oriented Design Patterns*
 
 ## 🔍Objectives
 
-Apply the principles of SOLID. 
+Apply the principles of SOLID through PHP exercises. 
 
 ## Level 1 
 
