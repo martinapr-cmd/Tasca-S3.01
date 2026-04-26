@@ -1,6 +1,5 @@
 <?php
 
-require_once 'IMachineActions.php';
 require_once 'Switchable.php';
 require_once 'Washable.php';
 

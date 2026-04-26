@@ -1,11 +1,10 @@
 <?php
 
-require_once 'IMachineActions.php';
 require_once 'Switchable.php';
 require_once 'Heatable.php';
 require_once 'Coolable.php';
 
-class ElectricHeater implements Switchable, Heatable
+class ElectricHeater implements Switchable, Heatable, Coolable
 {
     public function turnOn(): void
     {

@@ -4,9 +4,9 @@ require_once "AttackMove.php";
 
 class Combat {
 
-function doCombat(AttackMove $knight)
+function doCombat(AttackMove $attacker)
 {
-    $knight->attack(); 
+    $attacker->attack(); 
 }
 
 }
